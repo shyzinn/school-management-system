@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="school-management-system-jdk1.8:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/school_management_system_jdk1_8_jar</output-path>
+    <root id="archive" name="school-management-system-jdk1.8.jar">
+      <element id="module-output" name="Virtual_Global_System" />
+      <element id="extracted-dir" path="C:/libs/mysql-connector-java-8.0.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/libs/AnimateFX-1.2.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

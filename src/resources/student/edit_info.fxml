@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" spacing="1.0" stylesheets="@../css_files/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.EditInfo">
+   <children>
+      <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" styleClass="top-bar" text="Update Info">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <VBox prefHeight="70.0" prefWidth="100.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Email" />
+            <TextField fx:id="emailField" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="41.0" prefHeight="70.0" prefWidth="100.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Phone" />
+            <TextField fx:id="phoneField" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="351.0" prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#updateInfo" prefWidth="100.0" styleClass="success-btn" text="Update" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <VBox layoutX="10.0" layoutY="101.0" prefHeight="70.0" prefWidth="100.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Username" />
+            <TextField fx:id="usernameField" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="161.0" prefHeight="70.0" prefWidth="100.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Old password" />
+            <HBox spacing="5.0">
+               <children>
+                  <TextField fx:id="oldPasswordField" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="243.0" prefHeight="70.0" prefWidth="100.0" spacing="5.0" styleClass="box">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="New password" />
+            <PasswordField fx:id="newPasswordField" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#updatePassword" prefWidth="100.0" styleClass="primary-btn" text="Update" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="300.0" minWidth="377.0" prefHeight="350.0" prefWidth="380.0" spacing="5.0" styleClass="root-win" stylesheets="@../css_files/style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_menu.LoginController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" styleClass="header" text="VGC - System Management" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <VBox spacing="5.0" styleClass="box">
+         <children>
+            <VBox spacing="5.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Username">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="usernameField" />
+                  <Label layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Password">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <PasswordField fx:id="passwordField" onAction="#login" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <HBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="117.0" styleClass="primary-btn" text="Log In" HBox.hgrow="ALWAYS" />
+                  <Button layoutX="234.0" layoutY="16.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#setTablesOnDatabase" prefHeight="25.0" prefWidth="117.0" styleClass="success-btn" text="Set Database" textOverrun="WORD_ELLIPSIS" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" spacing="20.0" styleClass="box">
+         <children>
+            <RadioButton fx:id="adminRadioBtn" mnemonicParsing="false" text="Admin" />
+            <RadioButton fx:id="studentRadioBtn" mnemonicParsing="false" text="Student" />
+            <RadioButton fx:id="facultyRadioBtn" mnemonicParsing="false" text="Faculty" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <VBox spacing="5.0" styleClass="box">
+         <children>
+            <Label fx:id="progressLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" />
+            <ProgressIndicator fx:id="progressSpinner" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="392.0">
+               <rotationAxis>
+                  <Point3D z="2.0" />
+               </rotationAxis></ProgressIndicator>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+   </padding>
+</VBox>

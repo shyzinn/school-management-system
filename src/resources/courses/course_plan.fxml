@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../css_files/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courses.CoursePlanController">
+   <children>
+      <HBox fx:id="topBar" alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox layoutX="15.0" layoutY="15.0" spacing="5.0" styleClass="box" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Date" />
+                  <DatePicker fx:id="dateField" editable="false" maxWidth="1.7976931348623157E308" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <VBox prefWidth="300.0" spacing="5.0" styleClass="box" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Plan" />
+                  <TextField fx:id="planField" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="addBtn" disable="true" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#addCoursePlan" prefHeight="42.0" prefWidth="100.0" styleClass="top-bar-btns" text="Add" />
+            <Button fx:id="delBtn" disable="true" layoutX="358.0" layoutY="15.0" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#deleteCoursePlan" prefHeight="42.0" prefWidth="100.0" styleClass="top-bar-btns" text="Delete" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <fx:include fx:id="coursesPlanTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="course_plan_table.fxml" />
+   </children>
+</VBox>

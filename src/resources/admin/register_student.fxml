@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" spacing="1.0" stylesheets="@../css_files/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.RegisterStudent">
+   <children>
+      <Label maxWidth="1.7976931348623157E308" prefHeight="30.0" styleClass="top-bar" text="Add New Student">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="598.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Name*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameField" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="11.0" layoutY="62.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="598.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Department*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="departmentField" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="11.0" layoutY="236.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="598.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Email">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailField" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="11.0" layoutY="429.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="598.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Phone">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phoneField" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="11.0" layoutY="158.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="598.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Registration Date*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="regDateField" maxWidth="1.7976931348623157E308" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="11.0" layoutY="275.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="598.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Username* ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="11.0" layoutY="388.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="598.0" spacing="5.0" styleClass="box" VBox.vgrow="ALWAYS">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" styleClass="bold-label" text="Password*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#registerStudent" prefWidth="100.0" styleClass="success-btn" text="Register" />
+            <Button layoutX="15.0" layoutY="31.0" mnemonicParsing="false" onAction="#clearForm" prefWidth="100.0" styleClass="danger-btn" text="Clear Form" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+   </padding>
+</VBox>
